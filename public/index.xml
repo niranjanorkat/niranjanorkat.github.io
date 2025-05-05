@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Home on Niranjan Orkat</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content in Home on Niranjan Orkat</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 02 May 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;p&gt;I like building cool shit.&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/pdfs/Resume.pdf&#34;&gt;Resume&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>http://localhost:1313/projects/</link>
+      <pubDate>Fri, 02 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/projects/</guid>
+      <description>&lt;h3 id=&#34;pixelraster2d-2025&#34;&gt;&lt;a href=&#34;https://github.com/niranjanorkat/PixelRaster2D&#34;&gt;PixelRaster2D&lt;/a&gt; (2025)&lt;/h3&gt;&#xA;&lt;p&gt;A pixelated rasterizer built to experiment with the creation of primitive 2D shapes, anti-aliasing techniques, and gradient-based coloring.&lt;/p&gt;&#xA;&lt;h3 id=&#34;gokapix-2025&#34;&gt;&lt;a href=&#34;https://github.com/niranjankrishna-acad/gokapiX&#34;&gt;gokapiX&lt;/a&gt; (2025)&lt;/h3&gt;&#xA;&lt;p&gt;An implementation of BM25 variants surveyed in &amp;ldquo;Improvements to BM25 and Language Models Examined&amp;rdquo; by Trotman et al., 2014. &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;training-vision-transformers-with-only-2040-images-2022&#34;&gt;&lt;a href=&#34;https://github.com/niranjanorkat/Training-Vision-Transformers-with-Only-2040-Images/&#34;&gt;Training Vision Transformers with Only 2040 Images&lt;/a&gt; (2022)&lt;/h3&gt;&#xA;&lt;p&gt;An old (incomplete) implementation of &amp;ldquo;Training Vision Transformers with Only 2040 Images&amp;rdquo; by YH Cao et al., 2022. &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
