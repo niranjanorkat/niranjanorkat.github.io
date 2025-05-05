@@ -1,0 +1,12 @@
+[submodule "themes/hyde"]
+	path = themes/hyde
+	url = https://github.com/spf13/hyde
+[submodule "themes/zen"]
+	path = themes/zen
+	url = https://github.com/frjo/hugo-theme-zen
+[submodule "themes/resume"]
+	path = themes/resume
+	url = https://github.com/eddiewebb/hugo-resume
+[submodule "themes/gokarna"]
+	path = themes/gokarna
+	url = https://github.com/gokarna-theme/gokarna-hugo
