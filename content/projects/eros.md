@@ -4,7 +4,7 @@ description: "A private, local AI memory to help you remember the little things 
 date: 2025-05-06
 type: projects
 ---
-Github: https://github.com/niranjanorkat/eros
+Github: https://github.com/niranjanorkat/eros </br>
 
 Eros is a private, local AI memory to help you remember the little things about the people you care about.
 
