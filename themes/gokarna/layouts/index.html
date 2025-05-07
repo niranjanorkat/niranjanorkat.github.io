@@ -1,0 +1,81 @@
+{{ define "main" }}
+<section class="home-about">
+    <div class="avatar">
+        {{ if isset .Site.Params "avatarurl" }}
+        <img class={{ .Site.Params.AvatarSize | default "size-m" }} src='{{ .Scratch.Get "avatarImgSrc" }}'
+            alt="{{ .Site.Params.AvatarAltText|default " avatar" }}">
+        {{ end }}
+    </div>
+
+    <h1>{{ .Site.Title }}</h1>
+    {{ if isset .Site.Params "description" }}
+    <h2>{{ .Site.Params.Description }}</h2>
+    {{ end }}
+
+</section>
+
+<div class="flex-break"></div>
+
+{{ if isset .Site.Params "socialicons" }}
+<div class="gk-social-icons">
+    <ul class="gk-social-icons-list">
+        {{ range .Site.Params.SocialIcons }}
+        <li class="gk-social-icon">
+            <a href="{{ .url }}" {{ if .rel }}rel="{{ .rel }}" {{ end }} aria-label="Learn more on {{ .name }}">
+                <img class="svg-inject" src="{{ relURL " svg/icons/" }}{{ .name | lower }}.svg" alt="">
+            </a>
+        </li>
+        {{ end }}
+    </ul>
+</div>
+{{ end }}
+
+{{ if (or
+(and (fileExists "content/_index.md") .Content)
+(fileExists "content/index-about.md")) }}
+<section class="home-content">
+    {{ or .Content (readFile "index-about.md" | markdownify) }}
+</section>
+{{ end }}
+
+{{ if isset .Site.Params "showpostsonhomepage" }}
+
+<div class="home-posts list-posts">
+    <h2>Updates</h2>
+
+
+    {{ $postsProjects := where .Site.RegularPages "Params.type" "projects" }}
+
+    {{ $postsContributions := where .Site.RegularPages "Params.type" "contributions" }}
+
+    {{ $postsPosts := where .Site.RegularPages "Params.type" "posts" }}
+
+    {{ $allPosts := $postsProjects | append $postsContributions | append $postsPosts }}
+
+    {{ $recentPosts := sort $allPosts "Date" "desc" | first 5 }}
+
+    {{ range $recentPosts }}
+    <div class="home-post">
+        {{ if eq .Params.type "projects" }}
+        <h3><a href="{{ .Permalink }}">[Project] {{ .Title }}</a></h3>
+        <p>{{ .Params.description }}</p>
+
+        {{ else if eq .Params.type "contributions" }}
+        {{ with .Params.url }}
+        <h3><a href="{{ . }}">[Contribution] {{ $.Title }}</a></h3>
+        {{ else }}
+        <h3>{{ $.Title }}</h3> <!-- Fallback if no URL -->
+        {{ end }}
+
+        {{ else if eq .Params.type "posts" }}
+        <h3><a href="{{ .Permalink }}">[Post] {{ .Title }}</a></h3>
+        <p>{{ .Summary }}</p>
+        <a href="{{ .RelPermalink }}">Read more</a>
+        {{ end }}
+    </div>
+    {{ end }}
+</div>
+
+{{ end }}
+
+{{ end }}

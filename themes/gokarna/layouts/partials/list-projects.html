@@ -1,0 +1,12 @@
+<div class="container list-projects">
+
+    <h1 class="list-title">{{ i18n .Name }}</h1>
+
+    {{ range (where .Pages "Params.type" "projects").GroupByDate "2006" }}
+    <h2 class="posts-year">{{ .Key }}</h2>
+    {{ range .Pages }}
+    {{ partial "list.html" . }}
+    {{ end }}
+    {{ end }}
+
+</div>

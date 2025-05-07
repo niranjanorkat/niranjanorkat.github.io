@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ if eq .Type "page" }}
+{{- partial "page.html" . -}}
+{{ else if eq .Type "contribution" }}
+{{- partial "list-contributions.html" . -}}
+{{ else if eq .Type "projects" }}
+{{- partial "list-projects.html" . -}}
+{{ else }}
+{{- partial "list-posts.html" . -}}
+{{ end }}
+{{ end }}
