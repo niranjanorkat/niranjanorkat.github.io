@@ -20,6 +20,12 @@ theme = 'gokarna'
     name = "Projects"
     url = "/projects/"
     weight = 2
+  
+
+  [[menu.main]]
+    name = "Contributions"
+    url = "/contributions/"
+    weight = 2
 
   [[menu.main]]
     name = "About"
