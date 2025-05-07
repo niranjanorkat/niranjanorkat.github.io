@@ -1,6 +1,7 @@
 ---
 title: "Eros: A Local AI Memory Tool to Remember Things About People"
 date: 2025-05-06
+type: post
 ---
 
 # Eros
