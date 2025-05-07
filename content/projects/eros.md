@@ -4,7 +4,8 @@ description: "A private, local AI memory to help you remember the little things 
 date: 2025-05-06
 type: projects
 ---
-Github: https://github.com/niranjanorkat/eros </br>
+Github: https://github.com/niranjanorkat/eros
+
 Eros is a private, local AI memory to help you remember the little things about the people you care about.
 
 It combines a Retrieval-Augmented Generation (RAG) system with an LLM, powered by Ollama, LangChain, and Chroma.
